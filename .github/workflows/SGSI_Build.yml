@@ -51,8 +51,8 @@ jobs:
 
       - name: Configuration Environment‌‌...
         run: |
-          sudo apt-get install -y git wget git zip unzip curl axel
-
+          git clone https://github.com/akhilnarang/scripts x
+          cd x/setup && bash android_build_env.sh
       - name: Get the SGSI tool‌‌...
         run: |
           git clone --recurse-submodules https://github.com/xiaoxindada/SGSI-build-tool.git -b 11 $GITHUB_WORKSPACE/Tool-SGSI-build
